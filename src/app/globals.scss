@@ -3,6 +3,8 @@
   --main_gray: #374151;
   --main_blue: #0c48d7;
   --bg_blue: rgba(12 72 215 / 0.1);
+  --border: #ccc;
+  --bg_white: #f8f8f8;
 
   body {
     margin: 0;
@@ -44,7 +46,10 @@
   display: flex;
   max-width: 1280px;
   margin: 0 auto;
+
   main {
+    padding: 30px;
     flex-grow: 1;
+    min-height: 80vh;
   }
 }

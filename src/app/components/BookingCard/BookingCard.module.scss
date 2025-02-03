@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg_white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+
+  .booking {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .info,
+    .paymentDetails {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .paymentDetails {
+      span {
+        color: var(--main_blue);
+      }
+    }
+  }
+}
