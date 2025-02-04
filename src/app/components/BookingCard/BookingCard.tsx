@@ -7,7 +7,6 @@ interface BookingCardProps {
 }
 
 const BookingCard = ({ booking }: BookingCardProps) => {
-  console.log(booking);
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Numer rezerwacji: {booking.id}</h2>
@@ -40,7 +39,7 @@ const BookingCard = ({ booking }: BookingCardProps) => {
         </div>
         <div className={styles.paymentDetails}>
           <h4>Dane płatnicze</h4>
-          <p>
+          <div>
             <p className={styles.totalPrice}>
               <b>Cena za osobe :</b>{" "}
               <span>
@@ -53,7 +52,7 @@ const BookingCard = ({ booking }: BookingCardProps) => {
                 {booking.total_price} {booking.currency}{" "}
               </span>
             </p>
-          </p>
+          </div>
           <p>
             {" "}
             <b>Status płatności:</b> {booking.payment_status}
